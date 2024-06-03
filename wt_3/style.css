@@ -13,18 +13,20 @@ body{
     color: whitesmoke;
     /* border: 1px solid black; */
     padding-block: 10px;
+    /* position: fixed; */
     font-weight: 700;
 }
 .two{
     /* height: 8.5vh; */
+    position: sticky;
     color: white;
     background-color: black;
     width: 100%;
     top: 0;
-    position: sticky;
     text-align: center;
     /* padding: 14px 0 0 230px; */
     padding-block: 15px;
+    z-index: 5;
     /* padding-inline-start: 20px; */
 }
 .two span{
