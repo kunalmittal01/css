@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#yt-icon{
+    color: black;
+    box-shadow: 0px 0px 5px black  0.2;
+    border-radius: 90px;
+}
+body{
+    background-color: black;
+}
+.material-icons{
+    color: rgb(94, 91, 91)
+}
+input{
+    background-color: rgba(0,0,0,0.3);
+    border: none;
+}
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+}
+.header_left{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+.header img{
+    width: 50px;
+    margin-left: 10px;;
+}
+.header_left i{
+    cursor: pointer;
+}
+.header_left span{
+    color: white;
+}
+.header_search{
+    display: flex;
+}
+.header_search form{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.header_search input{
+    width: 500px;
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 100%;
+}
+.header_search button{
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.sidebar{
+    position: sticky;
+    top: 80px;
+    width: 220px;
+    height: 90vh;
+}
+.main{
+    display: flex;
+    color: white;
+}
+.sidebar-categories{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-block: 10px;
+}
+.sidebar-category{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+.sidebar-category span{
+    margin-left: 15px;
+}
+.sidebar-category:hover{
+    background-color: rgba(125,125,125,0.3);
+    cursor: pointer;
+}
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+.videos{
+    /* background-color: bisque; */
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-top: 2px solid black;
+}
+.video{
+    color: white;
+    margin-bottom: 30px;
+    width: 300px;
+}
+.video-thumbnail img{
+    border-radius: 10px;
+    width: 100%;
+    height: 150px;
+}
+.author img{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+.video-details{
+    display: flex;
+    margin-top: 5px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(128,128,128,0.5)
+}
+span{
+    text-decoration: none;
+    color: rgb(128,128,128,0.5);
+}
+h3{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    /* font-style: ; */
+}
