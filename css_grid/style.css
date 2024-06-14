@@ -5,11 +5,50 @@
 }
 body{
     padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#id1{
+    grid-area: id1;
+    border-radius: 5px;
+    width: fit-content;
+    /* grid-column: 1 / span 2; */
+    background-color: rgba(23, 37, 233, 0.568);
+    padding: 25px;
+}
+#id2{
+    grid-area: id2;
+    border-radius: 5px;
+    padding: 25px;
+    background-color: rgba(93, 93, 143, 0.795);
+}
+#id3{
+    grid-area: id3;
+    padding: 25px;
+    border-radius: 5px;
+    /* grid-row: span 2; */
+    background-color: rgb(219, 217, 217);
+}
+#id4 {
+    grid-area: id4;
+    padding: 25px;
+    border-radius: 5px;
+    /* grid-row: 2 / 3; */
+    background-color: rgba(249, 250, 245, 0.829);
+}
+#id5{
+    grid-area: id5;
+    padding: 25px;
+    border-radius: 5px;
+    /* grid-column: 2/span 2; */
+    background-color: rgba(2, 12, 12, 0.884);
 }
 .grid{
     display: grid;
-    grid-template-columns: 1.5fr 1.2fr 1.4fr 1.4fr ;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-columns: 1.5fr 1.2fr 1.4fr 1.4fr ;
+    grid-template-rows: 1fr 1fr; */
+    grid-template-areas: 
+        "id1 id1 id2 id3"
+        "id4 id5 id5 id3";
     gap: 20px;
     justify-content: center;
 }
@@ -27,13 +66,6 @@ body{
 img{
     width: 30px;
     border-radius: 50px;
-}
-#id1{
-    border-radius: 5px;
-    width: fit-content;
-    grid-column: 1 / span 2;
-    background-color: rgba(23, 37, 233, 0.568);
-    padding: 25px;
 }
 .para1 > .content1 :first-child{
     margin-bottom: 8px;
@@ -57,6 +89,9 @@ img{
     margin-bottom: 8px;
     font-size: larger;
     color: rgba(0, 0, 0, 0.9);
+}
+#jean{
+    color:rgba(13, 14, 14, 0.514)
 }
 .para3 > .content3 :nth-child(2){
     font-size: medium;
@@ -112,26 +147,42 @@ img{
     column-gap: 10px;
     margin-bottom: 18px;   
 }
-#id2{
-    border-radius: 5px;
-    padding: 25px;
-    background-color: rgba(93, 93, 143, 0.795);
+
+.five  img{
+    box-shadow: 0 0px 0px 3px rgba(129, 28, 133, 0.705);
 }
-#id3{
-    padding: 25px;
-    border-radius: 5px;
-    grid-row: span 2;
-    background-color: rgb(219, 217, 217);
+/* @media only screen and (max-width: 550px){
+    .grid{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+} */
+@media screen and (width<=1024px){
+    .grid{
+        grid-template-areas: 
+        "id1 id1 id2"
+        "id3 id3 id3"
+        "id4 id5 id5";
+    }
 }
-#id4 {
-    padding: 25px;
-    border-radius: 5px;
-    grid-row: 2 / 3;
-    background-color: rgba(249, 250, 245, 0.829);
-}
-#id5{
-    padding: 25px;
-    border-radius: 5px;
-    grid-column: 2/span 2;
-    background-color: rgba(2, 12, 12, 0.884);
+@media screen and (width <= 768px){
+    .grid{
+        grid-template-areas: 
+        "id1 id1 "
+        "id2 id3"
+        "id4 id3"
+        "id5 id5"
+    }
+    @media screen and (max-width: 500px) {
+        .grid{
+        grid-template-areas: 
+        "id1"
+        "id2"
+        "id3"
+        "id5"
+        "id4"
+        }
+        
+    }
 }
