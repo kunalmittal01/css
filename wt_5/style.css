@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    border:0;
+    font-family: "Open Sans", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f3f3f3;
+}
+.nav1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.904);
+    font-weight: 200;
+}
+.search{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    width: 50%;
+}
+.img-nav1 img{
+    max-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search select{
+    width: 60px;
+    height: 37px;
+    padding-left: 10px;
+    background-color: #f3f3f3;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.loc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loc p{
+    font-size: 11px;
+    margin-bottom: 7px;
+    color: #ddd;
+}
+.search input{
+    width: 800px;
+    height:37px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+.search input:focus{
+    outline: none;
+}
+.search > span{
+    padding: 9.5px 15px;
+    background-color: #febd68;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+    width: 80px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.search span i{
+    color: #000;
+}
+.query{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.query i{
+    font-size: 30px;
+}
+
+.query > .small{
+    font-size: 11px;
+}
+.signin span{
+    font-size: 11px;
+}
+.ro span{
+    font-size: 11px;
+}
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222f3d;
+    height: 40px;
+    color: #ddd;
+    font-size: 15px;
+    font-weight: 300;
+}
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    width: 44%;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.shop{
+    padding-right: 10px;
+}
+i{
+    color: white;
+}
+.nav1 a{
+    text-decoration: none;
+    color: white;
+}
+.nav1 a:hover{
+    cursor: pointer;
+    color: #ddd;
+}
+.nav2 a{
+    text-decoration: none;
+    color: white;
+}
+.nav2 a:hover{
+    cursor: pointer;
+    color: #ddd;
+}
+.fa-bars{
+    cursor: pointer;
+}
+.prime{
+    background-image: url(assets/prime-sale.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 65vh; 
+    width: 100%;
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7vh;
+    overflow: hidden;
+}
+.laptop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    padding: 3% 2%;
+    background-color:white;
+    transition: all 1s ease-in-out;
+    margin-bottom: 15px;
+}
+.laptop .item-img{
+    width: 100%;
+    height: 300px;
+}
+.items h3{
+    margin-bottom: 9px;
+    font-weight: 550;
+}
+.item-img > img{
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+}
+.laptop:hover{
+    transform: scale(1.1);
+    transform: background-color scale(1.1);
+    cursor: pointer;
+}
+footer{
+    margin-top: 5vh;
+}
+.top{
+    padding-block: 15px;
+    text-align: center;
+    background-color: #37475a;
+}
+.top a{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.top a :hover{
+    cursor: pointer;
+    color: #ddd;
+}
+.more-info{
+    display: flex; 
+    justify-content: space-evenly;
+    gap: 5%;
+    padding: 5%;
+    background: #232f3e;
+}
+.more-info h4{
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.sub-info p{
+    margin-bottom: 5px;
+    color: white;
+    font-size: 14px;
+}
+.sub-info a{
+    text-decoration: none;
+}
+.sub-info a:hover{
+    text-decoration: underline;
+    color: #ddd;
+}
+@media only screen and (max-width: 768px) {
+    .prime{
+        background-image: url(assets/prime-sale.jpg);
+        background-size: cover;
+        max-width: 768px;
+        max-height: 28vh;
+        background-position: center;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .prime{
+        background-image: url(assets/prime-sale.jpg);
+        background-size: cover;
+        width: 425px;
+        max-height: 30vh;
+        background-position: center;
+    }
+     .items{
+        display: flex;
+        flex-direction: column;
+     }
+     .laptop{
+        width: 100%;
+     }
+     .nav1 img{
+        width: 78px;
+     }
+     .search select{
+        width: 20px;
+     }
+     .search input{
+        width: 100px;
+     }
+     .search span{
+        padding-right: 10px;
+        width: 30px;
+     }
+     .loc{
+        font-size: 10px;
+     }
+     .loc span{
+        font-size: 9px;
+     }
+     .query{
+        width: 200px;
+        font-size: small;
+     }
+     .query i{
+        font-size: medium;
+     }
+     .prime{
+        width: 100%;
+        height: 45vh;
+        background-size: cover;
+        background-position: center;
+     }
+     .nav2{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+     }
+     .services{
+        display: flex;
+        justify-content: space-around;
+        font-size: 10px;
+        width: 40%;
+        gap: 5px;
+        align-content: center;
+     }
+}
