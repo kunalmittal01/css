@@ -13,12 +13,12 @@ body{
     justify-content: space-around;
     align-items: center;
     perspective: 800px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
     flex-wrap: wrap;
 }
 .watch{
     width: 300px;
     box-shadow: 0 0 10px rgb(128, 128, 128);
-    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
     transition: 0.5s;
     transform: rotateY(20deg);
 }
@@ -26,6 +26,7 @@ body{
     background-image: url("https://priyanshu-240499.github.io/Assignments-CSS/final/assets/il_fullxfull.2947254491_3h0z.webp");
     background-size: cover;
     background-position: center;
+    
     height: 49vh;
     margin-right: 19px;
 }
